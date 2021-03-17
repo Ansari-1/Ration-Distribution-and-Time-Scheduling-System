@@ -1,0 +1,114 @@
+CREATE TABLE `batch` (
+  `Batch_ID` mediumint(8) UNSIGNED NOT NULL,
+  `Batch` varchar(10) NOT NULL,
+  `Date` varchar(20) NOT NULL,
+  `Time` varchar(20) NOT NULL,
+  `sms_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `customer` (
+  `Cust_no` int(11) NOT NULL,
+  `RationCard_type` varchar(30) NOT NULL,
+  `No_of_Member` tinyint(3) NOT NULL,
+  `it1` int(11) NOT NULL,
+  `it2` int(11) NOT NULL,
+  `it3` mediumint(8) UNSIGNED DEFAULT NULL,
+  `price_1` int(10) UNSIGNED DEFAULT NULL,
+  `price_2` int(10) UNSIGNED DEFAULT NULL,
+  `Status_sms` varchar(10) NOT NULL,
+  `Status_Ration` varchar(20) NOT NULL,
+  `Ration_ID` int(11) NOT NULL,
+  `Cust_name` varchar(50) NOT NULL,
+  `Cust_contact` varchar(10) NOT NULL,
+  `Batch` varchar(10) NOT NULL,
+  `S_date` varchar(10) NOT NULL,
+  `S_time` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `customer` (`Cust_no`, `RationCard_type`, `No_of_Member`, `it1`, `it2`, `it3`, `price_1`, `price_2`, `Status_sms`, `Status_Ration`, `Ration_ID`, `Cust_name`, `Cust_contact`, `Batch`, `S_date`, `S_time`) VALUES
+
+(6, 'AAY', 7, 28, 35, NULL, 56, 140, 'F', 'F', 1006, 'Customer_6', '9100000006', 'B1', '05/05/2020', '6:55 PM'),
+(7, 'BPL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1007, 'Customer_7', '9100000007', 'B1', '05/05/2020', '6:55 PM'),
+(8, 'APL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1008, 'Customer_8', '9100000008', 'B1', '05/05/2020', '6:55 PM'),
+(9, 'AAY', 3, 12, 15, NULL, 24, 60, 'F', 'F', 1009, 'Customer_9', '9100000009', 'B1', '05/05/2020', '6:55 PM'),
+(10, 'BPL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1010, 'Customer_10', '9100000010', 'B1', '05/05/2020', '6:55 PM'),
+(11, 'APL', 5, 15, 20, NULL, 30, 80, 'F', 'F', 1011, 'Customer_11', '9100000011', 'B2', '05/05/2020', '6:55 PM'),
+(12, 'AAY', 5, 20, 25, NULL, 40, 100, 'F', 'F', 1012, 'Customer_12', '9100000012', 'B2', '05/05/2020', '6:55 PM'),
+(13, 'BPL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1013, 'Customer_13', '9100000013', 'B2', '05/05/2020', '6:55 PM'),
+(14, 'APL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1014, 'Customer_14', '9100000014', 'B2', '05/05/2020', '6:55 PM'),
+(15, 'AAY', 5, 20, 25, NULL, 40, 100, 'F', 'F', 1015, 'Customer_15', '9100000015', 'B2', '05/05/2020', '6:55 PM'),
+(16, 'BPL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1016, 'Customer_16', '9100000016', 'B2', '05/05/2020', '6:55 PM'),
+(17, 'APL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1017, 'Customer_17', '9100000017', 'B2', '05/05/2020', '6:55 PM'),
+(18, 'AAY', 3, 12, 15, NULL, 24, 60, 'F', 'F', 1018, 'Customer_18', '9100000018', 'B2', '05/05/2020', '6:55 PM'),
+(19, 'BPL', 4, 12, 16, NULL, 24, 64, 'F', 'F', 1019, 'Customer_19', '9100000019', 'B2', '05/05/2020', '6:55 PM'),
+(20, 'APL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1020, 'Customer_20', '9100000020', 'B2', '05/05/2020', '6:55 PM'),
+(21, 'AAY', 7, 28, 35, NULL, 56, 140, 'F', 'F', 1021, 'Customer_21', '9100000021', 'B3', '05/05/2020', '6:55 PM'),
+(22, 'BPL', 3, 9, 12, NULL, 18, 48, 'F', 'F', 1022, 'Customer_22', '9100000022', 'B3', '05/05/2020', '6:55 PM'),
+(23, 'APL', 5, 15, 20, NULL, 30, 80, 'F', 'F', 1023, 'Customer_23', '9100000023', 'B3', '05/05/2020', '6:55 PM'),
+(24, 'AAY', 5, 20, 25, NULL, 40, 100, 'F', 'F', 1024, 'Customer_24', '9100000024', 'B3', '05/05/2020', '6:55 PM'),
+(25, 'BPL', 3, 9, 12, NULL, 18, 48, 'F', 'F', 1025, 'Customer_25', '9100000025', 'B3', '05/05/2020', '6:55 PM'),
+(26, 'APL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1026, 'Customer_26', '9100000026', 'B3', '05/05/2020', '6:55 PM'),
+(27, 'AAY', 6, 24, 30, NULL, 48, 120, 'F', 'F', 1027, 'Customer_27', '9100000027', 'B3', '05/05/2020', '6:55 PM'),
+(28, 'BPL', 3, 9, 12, NULL, 18, 48, 'F', 'F', 1028, 'Customer_28', '9100000028', 'B3', '05/05/2020', '6:55 PM'),
+(29, 'APL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1029, 'Customer_29', '9100000029', 'B3', '05/05/2020', '6:55 PM'),
+(30, 'AAY', 5, 20, 25, NULL, 40, 100, 'F', 'F', 1030, 'Customer_30', '9100000030', 'B3', '05/05/2020', '6:55 PM'),
+(31, 'BPL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1031, 'Customer_31', '9100000031', 'B4', '05/08/2020', '6:55 PM'),
+(32, 'APL', 4, 12, 16, NULL, 24, 64, 'F', 'F', 1032, 'Customer_32', '9100000032', 'B4', '05/08/2020', '6:55 PM'),
+(33, 'AAY', 5, 20, 25, NULL, 40, 100, 'F', 'F', 1033, 'Customer_33', '9100000033', 'B4', '05/08/2020', '6:55 PM'),
+(34, 'BPL', 5, 15, 20, NULL, 30, 80, 'F', 'F', 1034, 'Customer_34', '9100000034', 'B4', '05/08/2020', '6:55 PM'),
+(35, 'APL', 3, 9, 12, NULL, 18, 48, 'F', 'F', 1035, 'Customer_35', '9100000035', 'B4', '05/08/2020', '6:55 PM'),
+(36, 'AAY', 7, 28, 35, NULL, 56, 140, 'F', 'F', 1036, 'Customer_36', '9100000036', 'B4', '05/08/2020', '6:55 PM'),
+(37, 'BPL', 6, 18, 24, NULL, 36, 96, 'F', 'F', 1037, 'Customer_37', '9100000037', 'B4', '05/08/2020', '6:55 PM'),
+(38, 'APL', 3, 9, 12, NULL, 18, 48, 'F', 'F', 1038, 'Customer_38', '9100000038', 'B4', '05/08/2020', '6:55 PM'),
+(39, 'AAY', 7, 28, 35, NULL, 56, 140, 'F', 'F', 1039, 'Customer_39', '9100000039', 'B4', '05/08/2020', '6:55 PM'),
+(40, 'BPL', 7, 21, 28, NULL, 42, 112, 'F', 'F', 1040, 'Customer_40', '9100000040', 'B4', '05/08/2020', '6:55 PM');
+
+
+CREATE TABLE `distributor` (
+  `Dist_no` int(11) NOT NULL,
+  `Shop_ID` int(11) NOT NULL,
+  `Shop_address` varchar(100) NOT NULL,
+  `Dist_name` varchar(50) NOT NULL,
+  `Dist_contact` int(11) NOT NULL,
+  `Dist_password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `distributor` (`Dist_no`, `Shop_ID`, `Shop_address`, `Dist_name`, `Dist_contact`, `Dist_password`) VALUES
+(1, 5007, 'abc', 'Anil', 1234567890, 'pass');
+
+CREATE TABLE `ration_items` (
+  `Item_no` int(11) NOT NULL,
+  `Item_name` varchar(20) NOT NULL,
+  `Available` mediumint(8) UNSIGNED DEFAULT NULL,
+  `Qty_free` tinyint(3) UNSIGNED DEFAULT NULL,
+  `Qty_1` int(11) DEFAULT NULL,
+  `Price_1` tinyint(3) UNSIGNED DEFAULT NULL,
+  `Qty_2` int(11) DEFAULT NULL,
+  `Price_2` tinyint(3) UNSIGNED DEFAULT NULL,
+  `Qty_3` int(11) DEFAULT NULL,
+  `Price_3` tinyint(3) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `ration_items` (`Item_no`, `Item_name`, `Available`, `Qty_free`, `Qty_1`, `Price_1`, `Qty_2`, `Price_2`, `Qty_3`, `Price_3`) VALUES
+(1, 'Rice', 600, 5, 4, 2, 3, 2, 3, 3),
+(2, 'Wheat', 600, 5, 5, 4, 4, 4, 4, 12);
+
+ALTER TABLE `batch`
+  ADD PRIMARY KEY (`Batch_ID`);
+
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`Cust_no`);
+
+ALTER TABLE `distributor`
+  ADD PRIMARY KEY (`Dist_no`);
+
+ALTER TABLE `ration_items`
+  ADD PRIMARY KEY (`Item_no`);
+
+ALTER TABLE `batch`
+  MODIFY `Batch_ID` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
