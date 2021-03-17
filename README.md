@@ -1,0 +1,2 @@
+# Ration-Distribution-and-Time-Scheduling-System
+In existing there is no online system for stock maintenance and scheduling the time for ration distribution. The existing manual distribution system requires shopkeepers to measure the quantity and maintain record of transaction. This manual system is facing many problems such as card holders wasting time for collecting ration by standing in a queue for hours together lot of fraudulent activities in ration dispensing societies, maintenance of records in the form of hard copy is difficult.
